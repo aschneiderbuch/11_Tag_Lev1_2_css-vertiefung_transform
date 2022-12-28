@@ -4,3 +4,80 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    background-color: blue;
+    width: 40vw;
+    flex-wrap: wrap;
+}
+
+div {
+    background-color: green;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    padding-top: 6%;
+}
+
+.translate {
+    transition: transform 2s ease;
+}
+
+.translate:hover { 
+    transform: translate(5rem, 5rem)
+}
+
+.translate--X {
+    transition: transform 1s ease-in-out ;
+
+}
+
+.translate--X:hover {
+    transform: translateX(-5rem);
+    background-color: yellow;
+}
+
+
+
+.translate--Y{
+    transition: transform 2s ease;
+}
+
+.translate--Y:hover {
+    transform: translateY(5rem);
+}
+
+
+.translate--rotate{
+    transition: transform 0.3s ease-out;
+}
+
+.translate--rotate:hover{
+    transform: rotate(45deg);
+}
+
+
+.translate--scale{
+    transition: transform 1s linear;
+}
+
+.translate--scale:active {
+    transform:scale(2, 3);
+}
+
+.translate--skew{
+    transition: transform 5s ease;
+}
+
+
+:hover
+.translate--skew {
+transform: skew(25deg);
+}
